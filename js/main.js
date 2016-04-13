@@ -1,3 +1,29 @@
+ //音乐控件
+    var myVideo = document.querySelector('audio');
+    function playPause() {
+        var myVideo = document.querySelectorAll('audio')[0];
+        var music_btn = document.getElementById('music_btn');
+        if (myVideo.paused){
+            myVideo.play();
+            $('.icon_audio').addClass('border_anim');
+        }
+        else{
+            myVideo.pause();
+            $('.icon_audio').removeClass('border_anim');
+        }
+    }
+
+
+
+
+    myVideo.addEventListener('canplaythrough',function(){
+        myVideo.play()
+    },false)
+
+    $(document).one("touchstart",function(e){
+        myVideo.play();
+    },false)
+	
 /* ===================================================
                   preloader
 =======================================================*/

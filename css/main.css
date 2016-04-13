@@ -2082,3 +2082,57 @@ h6 {
 	    	padding-top: 10px;
 	    
 	}
+	
+	
+	/*…Ë÷√“Ù¿÷*/
+        .icon_audio{background: url("http://images.hspic.com/static/weixin/dream_img/on_off.png") no-repeat; background-size: 100% 100%; width:24px; height:24px; position:absolute; z-index: 999; top:8%; right:6%; }
+
+        .border_anim .icon_audio_anim{
+            display:block;
+            width:8px; height:8px;
+            position:absolute;
+            background:url("http://images.hspic.com/static/weixin/dream_img/icon_audio_sign.png") no-repeat;
+            background-size: 100% 100%;
+            -webkit-animation:audio_anim 2s ease-out infinite;
+            -moz-animation:audio_anim 2s ease-out infinite;
+            -o-animation:audio_anim 2s ease-out infinite;
+            opacity:0;
+        }
+        .border_anim .iconaudio1, .border_anim .iconaudio2, .border_anim .iconaudio3{ position:relative; display:block; }
+        .border_anim .iconaudio1{
+            -webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+        }
+        .border_anim .iconaudio2{
+            -webkit-transform:rotate(30deg);
+            -moz-transform:rotate(30deg);
+            -o-transform:rotate(30deg);
+        }
+        .border_anim .iconaudio3{
+            -webkit-transform:rotate(45deg);
+            -moz-transform:rotate(45deg);
+            -o-transform:rotate(45deg);
+        }
+        .border_anim .iconaudio2 .icon_audio_anim{
+            -webkit-animation-duration:2s;
+            -webkit-animation-delay:.9s;
+            -moz-animation-duration:2s;
+            -moz-animation-delay:.9s;
+            -o-animation-duration:2s;
+            -o-animation-delay:1.9s;
+        }
+        .border_anim .iconaudio3 .icon_audio_anim{
+            -webkit-animation-duration:2s;
+            -webkit-animation-delay:1.9s;
+            -moz-animation-duration:2s;
+            -moz-animation-delay:.9s;
+            -o-animation-duration:2s;
+            -o-animation-delay:1.9s;
+        }
+
+        @-webkit-keyframes audio_anim {
+            0% { -webkit-transform:translate(0,0); opacity:0; }
+            30% { -webkit-transform:translate(-20px,-20px); opacity:1; }
+            100% { -webkit-transform:translate(-30px,-30px); opacity:0; }
+        }
