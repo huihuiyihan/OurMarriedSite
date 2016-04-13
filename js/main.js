@@ -214,7 +214,7 @@ $(window).load(function(){
 
        // animate
        $('html, body').animate({
-           scrollTop: $(this.hash).offset().top,
+           scrollTop: $(this.hash).offsetTop ,
 
          }, 1000, 'easeInQuart', function(){
 
