@@ -30,6 +30,8 @@
     <!-- THE FANYCYBOX CSS -->
     <link rel="stylesheet" href="megafolio/fancybox/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen" />
 
+    <link rel="stylesheet" href="css/share.min.css">
+
     <!-- INCLUDE GOOGLE FONTS -->
     <!-- <link href='http://fonts.useso.com/css?family=Droid+Sans:400,700|Cinzel:400,700|Great+Vibes' rel='stylesheet' type='text/css'>   -->      
 
@@ -91,7 +93,7 @@
                     <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">讨论<b class="caret"></b></a>
                         <ul class="dropdown-menu">
 
-                            <li><a href="#blog1">Blog1</a></li>
+                            <li><a href="#blog1">讨论</a></li>
                             <!-- <li class="divider"></li> -->
                             <!-- <li><a href="#blog2">Blog Style 2</a></li> -->
 
@@ -101,8 +103,8 @@
                         <ul class="dropdown-menu">
 
                             <li><a href="#gallery1">我们的照片</a></li>
-                           <!--  <li class="divider"></li>
-                            <li><a href="#gallery2">Gallery Style 2</a></li> -->
+                            <li class="divider"></li>
+                            <li><a href="#gallery2">我们的MV</a></li>
                             
                         </ul><!-- /.dropdown-menu -->
                     </li>
@@ -113,7 +115,7 @@
 
                  <!-- THE RIGHT SIDE MENU -->
                 <ul class="nav navbar-nav right-nav">
-                    <!-- <li><a href="#registry">Registry</a></li> -->
+                    <li><a href="#registry">点赞</a></li>
                     <li><a href="#guestbook">访客</a></li>
                     <li><a href="#rsvp">邀请 RSVP</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#myModal">联系我们</a></li>
@@ -157,7 +159,7 @@
 
             <!-- THE NAMES OF THE BRIDE AND GROOM -->
             <div class="names hide">
-                <div class="container">
+                <div class="container" style="font-size:70px;">
                     陈秀梅 <span><i>&#38;</i></span> 李从辉
                 </div><!-- /.container -->
             </div><!-- /.names -->
@@ -1290,7 +1292,7 @@
 
         <!-- "GALLERY 1" ACTUAL CONTENT -->
         <div class="container">
-            <h3 class="text-center">一些我们的照片</h3>
+            <h3 class="text-center">我们的照片</h3>
             <p>&nbsp;&nbsp;我们的爱将在此得以珍藏，我们的回忆将留在这个这里，不忘彼此，不忘初心，我想大声的说，我爱你直到永远！你，注定是我今生倾心驻足的风景，一世不舍的眷恋。为了你，我愿划破手指，滴血成圈，圈住你的款款深情，纵然玫瑰零落成泥碾作尘，我也甘愿守候着这一世的心疼。<br/>
             &nbsp;&nbsp;一生就这么一次，谈一场以结婚为目的的恋爱吧。不再因为任性而不肯低头，不再因为固执而轻言分手。最后地坚信一次，一直走，就可以到白头。就那样相守，在来往的流年里，岁月安好。惟愿这一生，执子之手，与子偕老！</p>
 
@@ -1706,8 +1708,12 @@
                         <div class="alignright">
                             <h5>微信朋友圈</h5>
                             <p>请关注我们！</p>
-                            <a class="readmore" href="#">Amy</a>
-                            <a class="readmore" href="#">Hui</a>
+                            <a href="img/idcode/amy.jpg" class="fancybox"  rel="group" title="Amy的微信朋友圈">
+                                <img src="img/idcode/amy.jpg" style="width: 120px;">
+                            </a>        
+                            <a href="img/idcode/hui.png" class="fancybox"  rel="group" title="hui的微信朋友圈">
+                                <img src="img/idcode/hui.png" style="width: 120px;">
+                            </a>      
                         </div><!-- /.alignright -->
                         <div class="clearfix"></div>
                     </div><!-- /.col-md-4-->
@@ -1722,8 +1728,10 @@
                         <div class="alignright">
                             <h5>新浪微博</h5>
                             <p>请关注我们！</p>
-                            <a class="readmore" href="#">Website</a>
-                            <a class="readmore" href="#">Website</a>
+                            <a href="img/idcode/weibo_amy.jpg" class="fancybox"  rel="group" title="Amy的微信朋友圈">
+                                <img src="img/idcode/weibo_amy.jpg" style="width: 200px;">
+                            </a>        
+                              
                         </div><!-- /.alignright -->
                         <div class="clearfix"></div>
                     </div><!-- /.col-md-4-->
@@ -1755,32 +1763,40 @@
 
                     <!-- GIFT/MONEY CONTENT -->
                     <div class="col-md-4">
-                        <h3 class="sectionmaintitle">公益礼金 / 礼物</h3>
+                        <h3 class="sectionmaintitle">公益打赏</h3>
                         <p>如果您要赞助我们，那再好不过了。我们将用这些钱来做更多有意义事情，我们可以把它们用来做公益，也可以把它们用来服务您。</p>
                     </div><!-- /.col-md-4-->
 
                     <!-- GIFT/MONEY ITEM -->
                     <div class="col-md-2 col-sm-2">
-                        <span><sup>$</sup>15</span>
-                        <a class="readmore" href="#">打发点儿咯!</a>
+                        <span><sup>￥</sup>15</span>
+                        <a class="fancybox readmore" href="img/idcode/amy_zhifubao.jpg" rel="group" title="支付宝打赏">打发点儿咯!
+                            <img src="img/idcode/amy_zhifubao.jpg" style="display: none;">
+                        </a>
                     </div><!-- /.col-md-2-->
 
                     <!-- GIFT/MONEY ITEM -->
                     <div class="col-md-2 col-sm-2">
-                        <span><sup>$</sup>30</span>
-                        <a class="readmore" href="#">这打点真棒!</a>
+                        <span><sup>￥</sup>30</span>
+                         <a class="fancybox readmore" href="img/idcode/amy_zhifubao.jpg" title="支付宝打赏">这打点真棒!
+                            <img src="img/idcode/amy_zhifubao.jpg" style="display: none;">
+                        </a>
                     </div><!-- /.col-md-2-->
 
                     <!-- GIFT/MONEY ITEM -->
                     <div class="col-md-2 col-sm-2">
-                        <span><sup>$</sup>75</span>
-                        <a class="readmore" href="#">我们做朋友吧!</a>
+                        <span><sup>￥</sup>75</span>
+                         <a class="fancybox readmore" href="img/idcode/amy_zhifubao.jpg" title="支付宝打赏">我们做朋友吧!
+                            <img src="img/idcode/amy_zhifubao.jpg" style="display: none;">
+                        </a>
                     </div><!-- /.col-md-2-->
 
                     <!-- GIFT/MONEY ITEM -->
                     <div class="col-md-2 col-sm-2">
-                        <span><sup>$</sup>150</span>
-                        <a class="readmore" href="#">土豪，谢谢打赏!</a>
+                        <span><sup>￥</sup>150</span>
+                        <a class="fancybox readmore" href="img/idcode/amy_zhifubao.jpg" title="支付宝打赏">土豪，谢谢打赏!
+                            <img src="img/idcode/amy_zhifubao.jpg" style="display: none;">
+                        </a>
                     </div><!-- /.col-md-2-->
                 </div><!-- /.row -->
             </div><!-- /.container-->
@@ -2112,7 +2128,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Send Us a Message</h4>
+                    <h4 class="modal-title" id="myModalLabel">要发送邮件给我们哦！</h4>
                 </div>
                 
                 <!-- the actual form begins -->
@@ -2120,23 +2136,23 @@
 
                     <div class="modal-body">
                         
-                        <p>Have any question of message for us? We'll always try to get back to you as soon as possible. Please use the form below and we'll receive your message in our inbox, only for us to see</p>
+                        <p></p>
 
                         <!-- NAME -->
                         <div class="form-group">
-                            <label for="contactname">Name</label>
+                            <label for="contactname">真实姓名</label>
                             <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Your Name">
                         </div><!-- /.form-group -->
 
                         <!-- EMAIL -->
                         <div class="form-group">
-                            <label for="contactemail">Email address</label>
+                            <label for="contactemail">您的邮箱地址</label>
                             <input type="email" class="form-control" id="contactemail" name="contactemail" placeholder="Your Email">
                         </div><!-- /.form-group -->
 
                         <!-- MESSAGE -->
                         <div class="form-group">
-                            <label for="contactmessage">Your Message</label>
+                            <label for="contactmessage">您的建议</label>
                             <textarea class="form-control" rows="3" placeholder="Please Enter Your Message" id="contactmessage" name="contactmessage"></textarea>
                         </div><!-- /.form-group -->
                        
@@ -2156,9 +2172,20 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+
+ <!-- =========================================================================================================
+    ==============================================================================================================
+                                            "GUEST BOOK" section
+    ==============================================================================================================
+    ============================================================================================================== -->
+
+    <section id="share">
+        <div align="center" id="share-2" style="margin-bottom: 10px;"></div>
+    </section><!-- guestbook -->
+
     <footer>
         <div class="container">
-            <p>Copyright &copy; 2016.HuiHuiAmy All rights reserved.</p>
+            <p>Copyright &copy; 2016.HuiHuiAmy All rights reserved.特别感谢：<a href="https://github.com"  target="_blank">GitHub</a></p>
         </div>
     </footer>
    
@@ -2206,5 +2233,11 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+    <script src="js/jquery.share.min.js"></script>
+
+    <script>
+
+    $('#share-2').share({sites: ['qzone', 'qq', 'weibo','wechat','facebook', 'twitter', 'google']});
+    </script>
     </body>
 </html>
