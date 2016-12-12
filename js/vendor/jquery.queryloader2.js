@@ -935,7 +935,7 @@ OverlayLoader.prototype.createOverlay = function () {
 
 	//GCC
 
-		var BigDay = new Date("01 Oct 2016, 15:30:00");
+		var BigDay = new Date("01 Jan 2017, 17:30:00");
 		var msPerDay = 24 * 60 * 60 * 1000 ;
 
 
